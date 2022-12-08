@@ -1,0 +1,1211 @@
+body {
+    background-color: #000;
+    box-sizing: inherit;
+    font-family: "Open Sans", "roboto", "Montserrat";
+  }
+  
+  /* NAVIGATION */
+  
+  li,
+  a {
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffff;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  
+  li {
+    padding: 20px;
+  }
+  
+  li {
+    display: block;
+    text-transform: uppercase;
+    padding: 10px 60px;
+  }
+  
+  nav a:hover {
+    color: #f28d9f;
+  }
+  
+  .homenav,
+  .gallerynav,
+  .explorenav,
+  .contactnav,
+  .aboutnav,
+  .exhibitionnav {
+    text-decoration: underline;
+  }
+  
+  .logo {
+    max-width: 50px;
+    position: absolute;
+    padding: 0px 10px;
+  }
+  
+  .fa-bars {
+    display: none;
+  }
+  
+  #hamburger-menu {
+    display: none;
+  }
+  
+  /* homepage  */
+  
+  .top-container {
+    background-image: url(/images/background5.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: flex;
+    height: 700px;
+  }
+  
+  .top-container h1 {
+    color: #ffff;
+    font-family: "Silom";
+    font-size: 60px;
+    position: absolute;
+    left: 120px;
+    top: 200px;
+    mix-blend-mode: normal;
+    max-width: 500px;
+  }
+  
+  .top-container h2 {
+    color: #ffff;
+    font-family: "Avenir Next";
+    font-weight: lighter;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 250px;
+    left: 1100px;
+    max-width: 450px;
+    margin: 10px;
+  }
+  
+  h3 {
+    color: #f28d9f;
+    text-align: center;
+    padding: 50px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: "Silom";
+    font-size: 25px;
+  }
+  
+  .top-container p {
+    color: #ffff;
+    font-family: "Avenir Next";
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 370px;
+    left: 1100px;
+    justify-self: center;
+    max-width: 400px;
+    margin: 10px;
+  }
+  
+  .exhibition-box {
+    background-color: #f2935c;
+    background-size: cover;
+    background-position-x: center;
+    display: grid;
+    grid-gap: 0px;
+    max-width: 100%;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    margin: 50px 0px;
+    padding: 20px 0px 100px 0px;
+  }
+  
+  .exhibitionp1 {
+    grid-row: 2;
+    grid-column: 1/2;
+    color: #fff;
+    font-weight: lighter;
+  }
+  
+  .exhibitionp2 {
+    grid-row: 3;
+    grid-column: 1/2;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+  }
+  
+  .exhibition-h3 {
+    color: #fff;
+    font-size: 50px;
+    margin: 0px;
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  
+  .cta {
+    background-color: #634a67;
+    padding: 25px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    grid-column: 1/2;
+    grid-row: 4;
+    max-width: 300px;
+    justify-self: center;
+  }
+  
+  .cta-explore {
+    background-color: #f28d9f;
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: center;
+  }
+  
+  .explore-boxes {
+    display: grid;
+    grid-gap: 0px;
+    max-width: 100%;
+    background-color: #fff;
+    height: 400px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 90px 0px;
+    margin: 0px;
+  }
+  
+  .explore-boxes h3 {
+    color: #f28d9f;
+    background-color: #fff;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: center;
+  }
+  
+  .kids-box {
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0px;
+  }
+  
+  .fa-child,
+  .fa-user-graduate,
+  .fa-chart-network {
+    font-size: 100px;
+    color: #6bb7bf;
+  }
+  
+  .kids-box h3,
+  .teachers-box h3,
+  .researchers-box h3 {
+    color: #634a67;
+    font-family: "Roboto";
+  }
+  
+  .teachers-box {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .researchers-box {
+    text-align: center;
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  .reviews-h3 {
+    color: #fff;
+    font-size: 40px;
+  }
+  
+  .reviews {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    border: 1px solid;
+    border-color: #f2e49b;
+  }
+  
+  .reviews div {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .fa-star {
+    color: #f2e49b;
+    padding: 2px;
+  }
+  
+  /*  Explore */
+  
+  .explore-body {
+    background-image: url(/images/exhibitionbg3.jpg);
+    background-size: cover;
+  }
+  
+  .explore {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 600px 600px;
+    max-width: 600px;
+  }
+  
+  .exploreheader {
+    color: #ffff;
+    font-size: 40px;
+    font-family: "Silom";
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+  }
+  
+  .explore-kids {
+    background-color: #f28d9f;
+    height: max-content;
+    border-radius: 20px;
+    padding: 30px 0px;
+  }
+  
+  .explore-teachers {
+    background-color: #f2e49b;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 30px 0px;
+  }
+  
+  .explore-researchers {
+    background-color: #f2935c;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 30px 0px;
+  }
+  
+  .explore-kids h2,
+  .explore-teachers h2,
+  .explore-researchers h2 {
+    color: #262626;
+    font-family: "Silom";
+    font-size: 40px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .explore-kids p,
+  .explore-teachers p,
+  .explore-researchers p {
+    color: #000;
+    font-family: "Open Sans";
+    text-align: center;
+    margin: 30px;
+  }
+  
+  .explore-kids-text,
+  .explore-teachers-text {
+    padding: 30px;
+  }
+  
+  .explore a {
+    color: #fff;
+    text-align: center;
+    background-color: #262626;
+    margin: 20px;
+    padding: 20px 40px;
+    border-radius: 20px;
+  }
+  
+  /*  About  and Visit  */
+  
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 20px;
+    margin: 20px;
+    max-width: 100%;
+  }
+  
+  .abouth1 {
+    color: #f28d9f;
+    font-family: "Silom";
+    text-align: center;
+    padding: 90px;
+    margin: 10px;
+  }
+  
+  .about_text {
+    color: #ffff;
+    font-family: "Open Sans";
+    width: fit-content;
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .about img {
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .visit {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+  
+  .visit_header {
+    color: #f2935c;
+    font-family: "Silom";
+    height: 10px;
+    text-align: center;
+    padding: 60px 40px;
+    font-size: 40px;
+  }
+  
+  .visit_picture {
+    width: 100%;
+  }
+  
+  .visit_text p {
+    color: #ffff;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  h4 {
+    color: #6bb7bf;
+    font-size: 30px;
+    margin: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+  }
+  
+  /*  CONTACT */
+  
+  .body_contact {
+    background-image: url(/images/contact1.jpg);
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
+  }
+  
+  .main_contact h1 {
+    color: #f28d9f;
+    font-family: "Silom";
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+  }
+  
+  .main_contact h2 {
+    font-family: "Roboto";
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .contactform {
+    display: grid;
+    grid-template-columns: 600px;
+    justify-content: center;
+    grid-gap: 20px;
+    max-width: 100%;
+  }
+  
+  textarea,
+  input {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  #message {
+    padding: 40px;
+  }
+  
+  .cta-big {
+    background-color: #6bb7bf;
+    color: #fff;
+    font-family: "Silom";
+    font-size: 20px;
+    padding: 20px 60px;
+    text-transform: uppercase;
+    justify-self: center;
+  }
+  
+  .main_contact {
+    color: #fff;
+    font-family: "Roboto";
+  }
+  
+  /*  Exhibition */
+  
+  .exhibition-body {
+    background-size: cover;
+    max-width: 100%;
+  }
+  
+  .exhibition img {
+    max-width: 500px;
+    border-radius: 50px;
+  }
+  
+  .exhibition_header {
+    color: #6bb7bf;
+    font-family: "Silom";
+    text-align: center;
+    padding: 90px 5px 30px 5px;
+  }
+  
+  .cosmology h2,
+  .robotics h2,
+  .evolution h2,
+  .biology h2 {
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: bolder;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cosmology,
+  .robotics,
+  .evolution,
+  .biology {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+    margin: 40px 2px;
+    background-color: #634a67;
+    filter: opacity(70%);
+    height: fit-content;
+    max-width: 100%;
+  }
+  
+  .cosmology img,
+  .biology img,
+  .evolution img,
+  .robotics img {
+    position: relative;
+    justify-self: center;
+    max-width: 100%;
+  }
+  
+  .cosmology h2,
+  .evolution h2,
+  .robotics h2,
+  .biology h2 {
+    color: #fff;
+  }
+  
+  .cosmology p,
+  .robotics p,
+  .evolution p,
+  .biology p {
+    color: #fff;
+    font-size: 16px;
+    padding: 50px 90px 5px 90px;
+    margin: 5px;
+    text-align: left;
+    max-width: 700px;
+    justify-self: center;
+  }
+  
+  /*  galery */
+  
+  .galery-body {
+    background-color: #634a67;
+  }
+  
+  .galeryh1 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Silom";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 60px;
+    margin: 10px;
+  }
+  
+  .galery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 60px;
+    margin: 20px;
+    max-width: 100%;
+  }
+  
+  .galery img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  footer {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: 12px;
+  }
+  
+  /*  MEDIA */
+  
+  @media (max-width: 1210px) {
+    li {
+      padding: 2px 2px;
+    }
+  
+    a {
+      padding: 10px 13px;
+      font-size: 13px;
+    }
+  
+    .logo {
+      max-width: 40px;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+    }
+  
+    .top-container {
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 600px;
+      width: 100%;
+    }
+  
+    .top-container h1 {
+      font-size: 40px;
+      left: 20px;
+      top: 200px;
+      max-width: 100px;
+    }
+  
+    .top-container h2 {
+      font-size: 20px;
+      top: 400px;
+      left: 20px;
+      max-width: 230px;
+    }
+  
+    .top-container p {
+      position: absolute;
+      top: 460px;
+      left: 20px;
+      justify-self: center;
+      max-width: 300px;
+      font-size: 10px;
+    }
+  
+    .explore-boxes {
+      display: grid;
+      grid-gap: 0px;
+      width: 100%;
+      background-color: #fff;
+      height: max-content;
+      grid-template-columns: 1fr;
+      padding: 10px 5px;
+      margin: 0px;
+      justify-items: center;
+    }
+  
+    .cta-explore {
+      padding: 10px 30px;
+      border-radius: 50px;
+      font-size: 20px;
+      grid-column: 1;
+      grid-row: 5;
+    }
+  
+    .kids-box {
+      text-align: center;
+      grid-column: 1;
+      grid-row: 2;
+      padding: 5px;
+      margin: 0px;
+    }
+  
+    .teachers-box {
+      text-align: center;
+      grid-column: 1;
+      grid-row: 3;
+      padding: 5px;
+    }
+  
+    .researchers-box {
+      text-align: center;
+      grid-column: 1;
+      grid-row: 4;
+      padding: 5px;
+    }
+  
+    .fa-child,
+    .fa-user-graduate,
+    .fa-chart-network {
+      font-size: 100px;
+      color: #6bb7bf;
+    }
+  
+    .kids-box {
+      grid-template-rows: 1fr;
+    }
+  
+    .kids-box p,
+    .teachers-box p,
+    .researchers-box p {
+      font-size: 20px;
+    }
+  
+    .explore-boxes h3 {
+      font-size: 40px;
+      padding: 5px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+  
+    .explore-kids p,
+    .explore-teachers p,
+    .explore-researchers p {
+      color: #000;
+      font-family: "Open Sans";
+      text-align: center;
+    }
+  
+    .explore-kids-text,
+    .explore-teachers-text {
+      padding: 5px;
+    }
+  
+    .exhibition-h3 {
+      font-size: 40px;
+    }
+  
+    .exhibition-box p {
+      font-size: 20px;
+      width: auto;
+    }
+  
+    .exhibition-box {
+      background-size: cover;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 0px;
+      width: 100%;
+      height: max-content;
+      position: relative;
+      text-align: center;
+      margin: 10px 0px;
+    }
+  
+    .cta {
+      font-size: 20px;
+      padding: 10px;
+      margin: 30px 0px;
+    }
+  
+    .reviews-h3 {
+      color: #fff;
+      font-size: 30px;
+    }
+  
+    .reviews {
+      grid-template-columns: 1fr;
+      border: 1px solid;
+      border-color: #f2e49b;
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .reviews div {
+      font-size: 20px;
+    }
+  
+    .reviews h4 {
+      font-size: 20px;
+    }
+  
+    .fa-star {
+      color: #f2e49b;
+      padding: 2px;
+    }
+  
+    /*  EXPLORE */
+    .explore_images {
+      grid-gap: 80px;
+    }
+  
+    .explore_images {
+      grid-gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    /* contact */
+  
+    .contactform {
+      grid-template-columns: 500px;
+      justify-content: center;
+      grid-gap: 10px;
+    }
+  
+    .contactform {
+      font-size: 30px;
+    }
+  
+    .main_contact h1 {
+      font-size: 40px;
+    }
+    .main_contact h2 {
+      font-size: 30px;
+    }
+  
+    .body_contact {
+      background-size: 200vmax;
+    }
+  
+    /*  galery */
+  
+    .galeryh1 {
+      font-size: 30px;
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    .galery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+      padding: 30px;
+      margin: 10px;
+    }
+  
+    .galery img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    /*  exhibition */
+  
+    .exhibition-body {
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .cosmology,
+    .robotics,
+    .evolution,
+    .biology {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      padding: 20px;
+      margin: 40px 2px;
+      filter: opacity(70%);
+      height: fit-content;
+    }
+  
+    .exhibition img {
+      width: 100%;
+      border-radius: 50px;
+      justify-self: center;
+    }
+  
+    .exhibition_header {
+      color: #6bb7bf;
+      font-family: "Silom";
+      text-align: center;
+      font-size: 30px;
+      padding: 20px 5px 5px 5px;
+    }
+  
+    .exhibition h2 {
+      text-transform: uppercase;
+      font-family: "Roboto";
+      font-weight: lighter;
+      font-size: 20px;
+      justify-self: center;
+    }
+  
+    .exhibition p {
+      font-size: 15px;
+    }
+  
+    /*  about */
+    .about {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  
+    .visit_header {
+      font-size: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 565px) {
+    nav {
+      display: none;
+    }
+  
+    a {
+      font-size: 12px;
+    }
+  
+    ul {
+      display: list-item;
+      text-align: right;
+    }
+  
+    .logo {
+      max-width: 30px;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+    }
+  
+    .fa-bars {
+      display: block;
+      font-size: 20px;
+      color: #fff;
+      padding: 5px 10px;
+      margin: 0px 10px;
+      width: 3px;
+      float: right;
+    }
+  
+    #hamburger-menu:checked ~ nav {
+      display: block;
+    }
+  
+    .top-container {
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 500px;
+      width: 100%;
+    }
+  
+    .top-container h1 {
+      font-size: 20px;
+      left: 20px;
+      top: 200px;
+      max-width: 100px;
+    }
+  
+    .top-container h2 {
+      font-size: 10px;
+      top: 300px;
+      left: 20px;
+      max-width: 130px;
+    }
+  
+    .top-container p {
+      position: absolute;
+      top: 320px;
+      left: 20px;
+      justify-self: center;
+      max-width: 110px;
+      font-size: 6px;
+    }
+  
+    .explore-boxes {
+      display: grid;
+      grid-gap: 0px;
+      width: 100%;
+      background-color: #fff;
+      height: 700px;
+      grid-template-columns: 1fr;
+      padding: 10px 0px;
+      margin: 0px;
+    }
+  
+    .kids-box {
+      text-align: center;
+      grid-column: 1;
+      grid-row: 2;
+      padding: 5px;
+      margin: 0px;
+    }
+  
+    .teachers-box {
+      text-align: center;
+      grid-column: 1;
+      grid-row: 3;
+      padding: 5px;
+    }
+  
+    .researchers-box {
+      text-align: center;
+      grid-column: 1;
+      grid-row: 4;
+      padding: 5px;
+    }
+  
+    .fa-child,
+    .fa-user-graduate,
+    .fa-chart-network {
+      font-size: 50px;
+      color: #6bb7bf;
+    }
+  
+    .kids-box {
+      grid-template-rows: 1fr;
+    }
+  
+    .kids-box p,
+    .teachers-box p,
+    .researchers-box p {
+      font-size: 10px;
+    }
+  
+    .cta-explore {
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 20px;
+      grid-column: 1;
+      grid-row: 5;
+    }
+  
+    .explore-boxes h3 {
+      font-size: 20px;
+      padding: 5px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+  
+    .explore-kids p,
+    .explore-teachers p,
+    .explore-researchers p {
+      color: #000;
+      font-family: "Open Sans";
+      text-align: center;
+    }
+  
+    .explore-kids-text,
+    .explore-teachers-text {
+      padding: 5px;
+    }
+  
+    .exhibition-h3 {
+      font-size: 20px;
+    }
+  
+    .exhibition-box p {
+      font-size: 10px;
+      width: auto;
+    }
+  
+    .exhibition-box {
+      background-size: cover;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 0px;
+      width: 100%;
+      height: 230px;
+      position: relative;
+      text-align: center;
+      margin: 10px 0px;
+    }
+  
+    .cta {
+      font-size: 10px;
+      padding: 10px;
+    }
+  
+    .reviews-h3 {
+      color: #fff;
+      font-size: 15px;
+    }
+  
+    .reviews {
+      grid-template-columns: 1fr;
+      border: 1px solid;
+      border-color: #f2e49b;
+      width: 100%;
+    }
+  
+    .reviews div {
+      font-size: 10px;
+    }
+  
+    .reviews h4 {
+      font-size: 15px;
+    }
+  
+    .fa-star {
+      color: #f2e49b;
+      padding: 2px;
+    }
+  
+    /* explore */
+  
+    .explore-body {
+      background-size: cover;
+    }
+  
+    .explore {
+      width: 100%;
+    }
+  
+    .explore a {
+      font-size: 15px;
+    }
+  
+    .explore-kids p,
+    .explore-teachers p,
+    .explore-researchers p {
+      font-size: 15px;
+    }
+  
+    .exploreheader {
+      align-self: center;
+      font-size: 25px;
+    }
+  
+    .explore-kids h2,
+    .explore-teachers h2,
+    .explore-researchers h2 {
+      font-size: 25px;
+      padding: 20px;
+    }
+  
+    /* contact  */
+  
+    .contactform {
+      grid-template-columns: 300px;
+      justify-content: center;
+      align-content: center;
+      grid-gap: 10px;
+    }
+  
+    .contactform {
+      font-size: 15px;
+    }
+  
+    .main_contact h1 {
+      font-size: 40px;
+    }
+    .main_contact h2 {
+      font-size: 20px;
+    }
+  
+    .body_contact {
+      background-size: 200vmax;
+    }
+  
+    /* About visit */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 5px 5px;
+      margin: 5px;
+    }
+  
+    .abouth1 {
+      padding: 30px;
+      margin: 10px;
+      font-size: 20px;
+    }
+  
+    .visit {
+      grid-template-columns: 1fr;
+    }
+  
+    .visit_header {
+      font-size: 20px;
+    }
+  
+    h4 {
+      font-size: 20px;
+    }
+  
+    /*  galery */
+  
+    .galeryh1 {
+      font-size: 20px;
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    .galery {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      padding: 30px;
+      margin: 10px;
+    }
+  
+    .galery img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    /*  exhibition */
+  
+    .exhibition-body {
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .cosmology,
+    .robotics,
+    .evolution,
+    .biology {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      padding: 20px;
+      margin: 40px 2px;
+      height: fit-content;
+    }
+  
+    .exhibition img {
+      width: 100%;
+      border-radius: 50px;
+    }
+  
+    .exhibition_header {
+      text-align: center;
+      font-size: 20px;
+      padding: 20px 5px 5px 5px;
+    }
+  
+    .exhibition h2 {
+      text-transform: uppercase;
+      font-family: "Roboto";
+      font-weight: lighter;
+      font-size: 20px;
+      justify-self: center;
+    }
+  
+    .exhibition p {
+      font-size: 15px;
+      padding: 2px;
+    }
+  }
